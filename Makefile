@@ -23,7 +23,7 @@ gcov:
 	gcov velha.cpp
 
 valgrind:
-	valgrind --leak-check=full ./testa_velha
+	valgrind --leak-check=full ./testa_velha.exe
 
 	
 cleangcov:
