@@ -45,4 +45,16 @@ TEST_CASE("Testa quando X ganha", "[single-file]") {
                           };
         REQUIRE(VerificaVelha(teste6) == 1);
     }
+    SECTION("Diagonal") {
+        int teste7[3][3]= {    { 1, 0, 0 },
+                               { 2, 1, 0 },
+                               { 2, 0, 1 }
+                          };
+        REQUIRE(VerificaVelha(teste7) == 1);
+        int teste8[3][3]= {    { 0, 2, 1 },
+                               { 0, 1, 2 },
+                               { 1, 0, 0 }
+                          };
+        REQUIRE(VerificaVelha(teste8) == 1);
+    }
 }
