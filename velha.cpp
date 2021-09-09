@@ -1,5 +1,6 @@
 /**
  * \file  velha.cpp
+ * Copyright 2021 Nícolas
  */
 
 
@@ -13,9 +14,6 @@
  *  Descrever o que a funcao faz
  */ 
 
-int VerificaVelha( int velha[3][3] )
-{
-	return 0; /*!< retorna zero para teste */
+int VerificaVelha(int velha[3][3]) {
+    return 0; /*!< retorna zero para teste */
 }
-
-
