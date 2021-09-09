@@ -119,7 +119,7 @@ TEST_CASE("Testa quando o jogo dá velha", "[single-file]") {
                             { 1, 2, 1 }
                         };
     REQUIRE(VerificaVelha(teste18) == 0);
-	int teste19[3][3]= {    { 2, 2, 1 },
+    int teste19[3][3]= {    { 2, 2, 1 },
                             { 1, 1, 2 },
                             { 2, 2, 1 }
                         };
