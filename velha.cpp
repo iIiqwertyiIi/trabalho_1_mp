@@ -34,4 +34,10 @@ int VerificaVelha(int velha[3][3]) {
         (g == h && h == i && g == 1)) {
         return 1;
     }
+    // Verifica se X ganhou na vertical
+    if ((a == d && d == g && a == 1) ||
+        (b == e && e == h && b == 1) ||
+        (c == f && f == i && c == 1)) {
+        return 1;
+    }
 }
