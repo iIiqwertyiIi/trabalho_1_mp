@@ -125,3 +125,21 @@ TEST_CASE("Testa quando o jogo dá velha", "[single-file]") {
                         };
     REQUIRE(VerificaVelha(teste19) == 0);
 }
+
+TEST_CASE("Testa quando o jogo está indefinido", "[single-file}") {
+    int teste20[3][3]= {    { 0, 0, 0 },
+                            { 0, 0, 0 },
+                            { 2, 0, 0 }
+                        };
+    REQUIRE(VerificaVelha(teste20) == -1);
+    int teste21[3][3]= {    { 1, 2, 1 },
+                            { 0, 0, 2 },
+                            { 2, 1, 0 }
+                        };
+    REQUIRE(VerificaVelha(teste21) == -1);
+    int teste20[3][3]= {    { 0, 2, 1 },
+                            { 2, 1, 1 },
+                            { 2, 1, 2 }
+                        };
+    REQUIRE(VerificaVelha(teste20) == -1);
+}
