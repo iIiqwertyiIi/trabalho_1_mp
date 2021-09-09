@@ -1,5 +1,5 @@
 all: velha.o testa_velha.cpp
-	g++ -std=c++11 -Wall -ftest-coverage -fprofile-arcs velha.o testa_velha.cpp -o testa_velha
+	g++ -std=c++11 -Wall -ftest-coverage -fprofile-arcs velha.o testa_velha.cpp -o testa_velha.exe
 	
 
 velha.o : velha.cpp velha.hpp
