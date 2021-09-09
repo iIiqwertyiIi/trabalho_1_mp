@@ -37,4 +37,9 @@ int VerificaVelha(int velha[3][3]) {
         (c == f && f == i && c == 1)) {
         return 1;
     }
+    // Verifica se X ganhou na diagonal
+    if ((a == e && e == i && a == 1) ||
+        (c == e && e == g && c == 1)) {
+        return 1;
+    }
 }
