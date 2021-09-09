@@ -39,4 +39,15 @@ int VerificaVelha(int velha[3][3]) {
         (c == e && e == g && c == 1)) {
         return 1;
     }
+    // Verifica se O ganhou
+    if ((a == b && b == c && a == 2) ||
+        (d == e && e == f && d == 2) ||
+        (g == h && h == i && g == 2) ||
+        (a == d && d == g && a == 2) ||
+        (b == e && e == h && b == 2) ||
+        (c == f && f == i && c == 2) ||
+        (a == e && e == i && a == 2) ||
+        (c == e && e == g && c == 2)) {
+        return 2;
+    }
 }
