@@ -66,5 +66,7 @@ int VerificaVelha(int velha[3][3]) {
     // Verifica se deu velha
     if (contadorX + contadorY == 9) {
         return 0;
+    } else if (contadorX + contadorY != 9) {
+        return -1;
     }
 }

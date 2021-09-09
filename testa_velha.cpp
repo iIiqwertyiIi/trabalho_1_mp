@@ -137,9 +137,9 @@ TEST_CASE("Testa quando o jogo está indefinido", "[single-file}") {
                             { 2, 1, 0 }
                         };
     REQUIRE(VerificaVelha(teste21) == -1);
-    int teste20[3][3]= {    { 0, 2, 1 },
+    int teste22[3][3]= {    { 0, 2, 1 },
                             { 2, 1, 1 },
                             { 2, 1, 2 }
                         };
-    REQUIRE(VerificaVelha(teste20) == -1);
+    REQUIRE(VerificaVelha(teste22) == -1);
 }
