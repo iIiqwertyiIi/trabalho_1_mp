@@ -42,31 +42,31 @@ int VerificaVelha(int velha[3][3]) {
         }
     }
     // Verifica se X ganhou
-    if ((a == b && b == c && a == 1) ||
-        (d == e && e == f && d == 1) ||
-        (g == h && h == i && g == 1) ||
-        (a == d && d == g && a == 1) ||
-        (b == e && e == h && b == 1) ||
-        (c == f && f == i && c == 1) ||
-        (a == e && e == i && a == 1) ||
-        (c == e && e == g && c == 1)) {
+    if ((a == b && b == c && a == 1) ||  // Linha 1
+        (d == e && e == f && d == 1) ||  // Linha 2
+        (g == h && h == i && g == 1) ||  // Linha 3
+        (a == d && d == g && a == 1) ||  // Coluna 1
+        (b == e && e == h && b == 1) ||  // Coluna 2
+        (c == f && f == i && c == 1) ||  // Coluna 3
+        (a == e && e == i && a == 1) ||  // Diagonal 1
+        (c == e && e == g && c == 1)) {  // Diagonal 2
         return 1;
     }
     // Verifica se O ganhou
-    if ((a == b && b == c && a == 2) ||
-        (d == e && e == f && d == 2) ||
-        (g == h && h == i && g == 2) ||
-        (a == d && d == g && a == 2) ||
-        (b == e && e == h && b == 2) ||
-        (c == f && f == i && c == 2) ||
-        (a == e && e == i && a == 2) ||
-        (c == e && e == g && c == 2)) {
+    if ((a == b && b == c && a == 2) ||  // Linha 1
+        (d == e && e == f && d == 2) ||  // Linha 2
+        (g == h && h == i && g == 2) ||  // Linha 3
+        (a == d && d == g && a == 2) ||  // Coluna 1
+        (b == e && e == h && b == 2) ||  // Coluna 2
+        (c == f && f == i && c == 2) ||  // Coluna 3
+        (a == e && e == i && a == 2) ||  // Diagonal 1
+        (c == e && e == g && c == 2)) {  // Diagonal 2
         return 2;
     }
     // Verifica se deu velha
     if (contadorX + contadorY == 9) {
         return 0;
-    } else if (contadorX + contadorY != 9) {
+    } else if (contadorX + contadorY != 9) {  // Verifica se está indefinido
         return -1;
     }
 }
