@@ -28,17 +28,14 @@ int VerificaVelha(int velha[3][3]) {
     int g = velha[2][0];
     int h = velha[2][1];
     int i = velha[2][2];
-    // Verifica se X ganhou na horizontal e na vertical
+    // Verifica se X ganhou
     if ((a == b && b == c && a == 1) ||
         (d == e && e == f && d == 1) ||
         (g == h && h == i && g == 1) ||
         (a == d && d == g && a == 1) ||
         (b == e && e == h && b == 1) ||
-        (c == f && f == i && c == 1)) {
-        return 1;
-    }
-    // Verifica se X ganhou na diagonal
-    if ((a == e && e == i && a == 1) ||
+        (c == f && f == i && c == 1) ||
+        (a == e && e == i && a == 1) ||
         (c == e && e == g && c == 1)) {
         return 1;
     }
