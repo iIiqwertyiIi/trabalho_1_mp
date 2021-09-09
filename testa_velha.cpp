@@ -107,3 +107,21 @@ TEST_CASE("Testa quando O ganha", "[single-file]") {
         REQUIRE(VerificaVelha(teste16) == 2);
     }
 }
+
+TEST_CASE("Testa quando o jogo dá velha", "[single-file]") {
+    int teste17[3][3]= {    { 2, 1, 2 },
+                            { 1, 1, 2 },
+                            { 2, 2, 1 }
+                        };
+    REQUIRE(VerificaVelha(teste17) == 0);
+    int teste18[3][3]= {    { 2, 1, 2 },
+                            { 1, 2, 1 },
+                            { 1, 2, 1 }
+                        };
+    REQUIRE(VerificaVelha(teste18) == 0);
+	int teste19[3][3]= {    { 2, 2, 1 },
+                            { 1, 1, 2 },
+                            { 2, 2, 1 }
+                        };
+    REQUIRE(VerificaVelha(teste19) == 0);
+}
