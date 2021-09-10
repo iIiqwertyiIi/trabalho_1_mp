@@ -239,5 +239,10 @@ TEST_CASE("Testa quando o jogo é impossível", "[single-file]") {
                                 { 2, 1, 2 }
                             };
         REQUIRE(VerificaVelha(teste39) == -2);
+        int teste40[3][3]= {    { 1, 2, 1 },
+                                { 2, 1, 2 },
+                                { 1, 2, 1 }
+                            };
+        REQUIRE(VerificaVelha(teste40) == -2);
     }
 }
