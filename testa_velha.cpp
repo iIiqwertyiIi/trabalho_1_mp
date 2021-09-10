@@ -152,11 +152,30 @@ TEST_CASE("Testa quando o jogo é impossível", "[single-file]") {
                             };
         REQUIRE(VerificaVelha(teste23) == -2);
     }
-	SECTION("Apenas O") {
+    SECTION("Apenas O") {
         int teste24[3][3]= {    { 2, 2, 2 },
                                 { 2, 2, 2 },
                                 { 2, 2, 2 }
                             };
         REQUIRE(VerificaVelha(teste24) == -2);
+    }
+    SECTION("2 a mais comparando X com O e vice-versa") {
+        int teste25[3][3]= {    { 2, 0, 0 },
+                                { 0, 0, 0 },
+                                { 1, 1, 1 }
+                            };
+        REQUIRE(VerificaVelha(teste25) == -2);
+        int teste26[3][3]= {    { 2, 0, 2 },
+                                { 0, 2, 2 },
+                                { 1, 0, 1 }
+                            };
+        REQUIRE(VerificaVelha(teste26) == -2);
+    }
+	SECTION("Possui valores inválidos") {
+        int teste27[3][3]= {    { 5, 4, 9 },
+                                { -150, 2, -1 },
+                                { 1, 7, 1 }
+                            };
+        REQUIRE(VerificaVelha(teste27) == -2);
     }
 }
