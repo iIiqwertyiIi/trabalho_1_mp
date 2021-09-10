@@ -41,6 +41,10 @@ int VerificaVelha(int velha[3][3]) {
             }
         }
     }
+    // Compara as quantidades de X e O para ver se o jogo é válido
+    if ((contadorX - contadorY > 1) || (contadorY - contadorX > 1)) {
+        return -2;
+    }
     // Verifica se X ganhou
     if ((a == b && b == c && a == 1) ||  // Linha 1
         (d == e && e == f && d == 1) ||  // Linha 2
