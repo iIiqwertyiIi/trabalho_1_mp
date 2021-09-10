@@ -56,6 +56,20 @@ int VerificaVelha(int velha[3][3]) {
         (c == f && f == i && c == 1) ||  // Coluna 3
         (a == e && e == i && a == 1) ||  // Diagonal 1
         (c == e && e == g && c == 1)) {  // Diagonal 2
+        if ((a == b && b == c && a == 1 && a == e && e == i && a == 1) ||
+            (a == b && b == c && a == 1 && c == e && e == g && c == 1) ||
+            (d == e && e == f && d == 1 && a == e && e == i && a == 1) ||
+            (d == e && e == f && d == 1 && c == e && e == g && c == 1) ||
+            (g == h && h == i && g == 1 && a == e && e == i && a == 1) ||
+            (g == h && h == i && g == 1 && c == e && e == g && c == 1) ||
+            (a == d && d == g && a == 1 && a == e && e == i && a == 1) ||
+            (a == d && d == g && a == 1 && c == e && e == g && c == 1) ||
+            (b == e && e == h && b == 1 && a == e && e == i && a == 1) ||
+            (b == e && e == h && b == 1 && c == e && e == g && c == 1) ||
+            (c == f && f == i && c == 1 && a == e && e == i && a == 1) ||
+            (c == f && f == i && c == 1 && c == e && e == g && c == 1)) {
+                return -2;
+            }
         return 1;
     }
     // Verifica se O ganhou
@@ -67,6 +81,20 @@ int VerificaVelha(int velha[3][3]) {
         (c == f && f == i && c == 2) ||  // Coluna 3
         (a == e && e == i && a == 2) ||  // Diagonal 1
         (c == e && e == g && c == 2)) {  // Diagonal 2
+        if ((a == b && b == c && a == 2 && a == e && e == i && a == 2) ||
+            (a == b && b == c && a == 2 && c == e && e == g && c == 2) ||
+            (d == e && e == f && d == 2 && a == e && e == i && a == 2) ||
+            (d == e && e == f && d == 2 && c == e && e == g && c == 2) ||
+            (g == h && h == i && g == 2 && a == e && e == i && a == 2) ||
+            (g == h && h == i && g == 2 && c == e && e == g && c == 2) ||
+            (a == d && d == g && a == 2 && a == e && e == i && a == 2) ||
+            (a == d && d == g && a == 2 && c == e && e == g && c == 2) ||
+            (b == e && e == h && b == 2 && a == e && e == i && a == 2) ||
+            (b == e && e == h && b == 2 && c == e && e == g && c == 2) ||
+            (c == f && f == i && c == 2 && a == e && e == i && a == 2) ||
+            (c == f && f == i && c == 2 && c == e && e == g && c == 2)) {
+                return -2;
+            }
         return 2;
     }
     // Verifica se deu velha
