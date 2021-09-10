@@ -32,7 +32,7 @@ int VerificaVelha(int velha[3][3]) {
     int contadorX = 0;
     int contadorY = 0;
     // Variável se o X ganhou 0 = false, 1 = true
-	int ganhou = 0;
+    int ganhou = 0;
     // Verifica se todos os espaços foram preenchidos ou se há valor inválido
     for (int j = 0; j < 3; j++) {
         for (int k = 0; k < 3; k++) {
@@ -105,7 +105,7 @@ int VerificaVelha(int velha[3][3]) {
             return 2;
         }
     }
-	if (ganhou == 1) {
+    if (ganhou == 1) {
         return 1;
     }
     // Verifica se deu velha
