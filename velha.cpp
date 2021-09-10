@@ -31,7 +31,7 @@ int VerificaVelha(int velha[3][3]) {
     // Contadores para X e O
     int contadorX = 0;
     int contadorY = 0;
-    // Variável se alguém ganhou 0 = false, 1 = true
+    // Variável se o X ganhou 0 = false, 1 = true
 	int ganhou = 0;
     // Verifica se todos os espaços foram preenchidos ou se há valor inválido
     for (int j = 0; j < 3; j++) {
