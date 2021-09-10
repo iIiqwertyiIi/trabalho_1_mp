@@ -171,7 +171,7 @@ TEST_CASE("Testa quando o jogo é impossível", "[single-file]") {
                             };
         REQUIRE(VerificaVelha(teste26) == -2);
     }
-	SECTION("Possui valores inválidos") {
+    SECTION("Possui valores inválidos") {
         int teste27[3][3]= {    { 5, 4, 9 },
                                 { -150, 2, -1 },
                                 { 1, 7, 1 }

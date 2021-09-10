@@ -38,6 +38,8 @@ int VerificaVelha(int velha[3][3]) {
                 contadorX++;
             } else if (velha[j][k] == 2) {
                 contadorY++;
+            } else if ((velha[j][k] < 0) || (velha[j][k] > 2)) {
+                return -2;
             }
         }
     }
