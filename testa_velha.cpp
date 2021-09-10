@@ -143,3 +143,13 @@ TEST_CASE("Testa quando o jogo está indefinido", "[single-file}") {
                         };
     REQUIRE(VerificaVelha(teste22) == -1);
 }
+
+TEST_CASE("Testa quando o jogo é impossível", "[single-file]") {
+    SECTION("Apenas X") {
+        int teste23[3][3]= {    { 1, 1, 1 },
+                                { 1, 1, 1 },
+                                { 1, 1, 1 }
+                            };
+        REQUIRE(VerificaVelha(teste23) == -2);
+    }
+}
