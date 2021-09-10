@@ -67,7 +67,8 @@ int VerificaVelha(int velha[3][3]) {
             (b == e && e == h && b == 1 && a == e && e == i && a == 1) ||
             (b == e && e == h && b == 1 && c == e && e == g && c == 1) ||
             (c == f && f == i && c == 1 && a == e && e == i && a == 1) ||
-            (c == f && f == i && c == 1 && c == e && e == g && c == 1)) {
+            (c == f && f == i && c == 1 && c == e && e == g && c == 1) ||
+            (a == e && e == i && a == 1 && c == e && e == g && c == 1)) {
                 return -2;
             }
         return 1;
@@ -92,7 +93,8 @@ int VerificaVelha(int velha[3][3]) {
             (b == e && e == h && b == 2 && a == e && e == i && a == 2) ||
             (b == e && e == h && b == 2 && c == e && e == g && c == 2) ||
             (c == f && f == i && c == 2 && a == e && e == i && a == 2) ||
-            (c == f && f == i && c == 2 && c == e && e == g && c == 2)) {
+            (c == f && f == i && c == 2 && c == e && e == g && c == 2) ||
+            (a == e && e == i && a == 2 && c == e && e == g && c == 2)) {
                 return -2;
             }
         return 2;
