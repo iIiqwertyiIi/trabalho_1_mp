@@ -11,6 +11,5 @@ O caso de teste de quando o jogo é impossível verifica os seguintes casos:
     - quando tem apenas O;
     - quando tem 2 a mais de X comparado ao de O e vice-versa;
     - quando possui valores inválidos;
-    - quando X ou O ganham em mais de uma direção;
     - quando X e O ganham.
 Passar nesses testes significa que o código verifica as possibilidades do jogo da velha ser válido ou não, ou seja, se é um jogo que pode ser encontrado na vida real.
