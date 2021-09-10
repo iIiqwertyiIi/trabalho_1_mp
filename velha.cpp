@@ -6,13 +6,13 @@
 
 #include "velha.hpp"
 
-/** 
- * @brief verifica situacao do jogo da velha  
- * @author Programador 
- * @param  velha descreve o parametro
+/**
+ * @brief verifica situacao do jogo da velha
+ * @author Nícolas Paulin Benatto
+ * @param  velha Matriz 3 x 3, representando um jogo da velha, em que 0 = vazio, 1 = X e 2 = O
  * 
- *  Descrever o que a funcao faz
- */ 
+ * A função recebe o parâmetro velha e verifica se esse jogo da velha é possivel, além de verificar quem ganhou, se está incompleto ou se terminou empatado.
+ */
 
 int VerificaVelha(int velha[3][3]) {
     // Definindo variáveis a cada espaço do jogo da velha, tal que:

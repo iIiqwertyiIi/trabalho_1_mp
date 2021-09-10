@@ -1,0 +1,16 @@
+O caso de teste quando X ganha verifica, na horizontal, na vertical e nas diagonais se o X ganhou. Passar no teste significa que o código consegue verificar que o X ganhou.
+
+O caso de teste quando O ganha, assim como no caso em que X ganha, verifica na horizontal, na vertical e nas diagonais se o O ganhou. Passar no teste significa que o código verificou que O ganhou.
+
+O caso de teste de quando o jogo dá velha verifica se, ao terminar o jogo, ele terminou empatado. Passar nesse teste significa que o código verificou que o jogo terminou empatado.
+
+O caso de teste de quando o jogo está indefinido verifica se não há espaços vazios e se ninguém ganhou ainda. Passar nesse teste significa que o código verificou se alguém ganhou, falhou e verificou se todos os espaços estão preenchidos, falhou novamente e resultou em um jogo ainda indefinido.
+
+O caso de teste de quando o jogo é impossível verifica os seguintes casos:
+    - quando tem apenas X;
+    - quando tem apenas O;
+    - quando tem 2 a mais de X comparado ao de O e vice-versa;
+    - quando possui valores inválidos;
+    - quando X ou O ganham em mais de uma direção;
+    - quando X e O ganham.
+Passar nesses testes significa que o código verifica as possibilidades do jogo da velha ser válido ou não, ou seja, se é um jogo que pode ser encontrado na vida real.
